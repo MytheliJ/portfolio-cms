@@ -24,6 +24,7 @@ if (!isset($_SESSION['user_id'])) {
   <input type="file" name="image" accept="image/*" required><br><br>
   <button type="submit" name="add">Add Project</button>
 </form>
+<a href="delete_project.php?id=<?= $row['id'] ?>" onclick="return confirm('Are you sure?')">Delete</a>
 
     </div>
 </body>
